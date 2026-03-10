@@ -240,7 +240,7 @@ function normalizeDni(raw) {
 }
 
 function parseDniList(text) {
-  const lines = text.split(/\r?\n/);
+  const lines = text.split(/\\r?\\n/);
   const dnis = [];
   const errors = [];
   for (let i = 0; i < lines.length; i++) {
