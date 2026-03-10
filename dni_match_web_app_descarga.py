@@ -10,7 +10,7 @@ app = FastAPI(title="DNI Match", docs_url=None, redoc_url=None)
 ROOM_TTL_SECONDS = 6 * 60 * 60
 rooms: dict[str, dict] = {}
 
-HTML = """
+HTML = r"""
 <!doctype html>
 <html lang="es">
 <head>
@@ -240,7 +240,7 @@ function normalizeDni(raw) {
 }
 
 function parseDniList(text) {
-  const lines = text.split(/\\r?\\n/);
+  const lines = text.split(/\r?\n/);
   const dnis = [];
   const errors = [];
   for (let i = 0; i < lines.length; i++) {
