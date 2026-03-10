@@ -205,7 +205,7 @@ HTML = r"""
       <section class="card">
         <h2>Notas</h2>
         <p class="small">
-          Esta demo valida DNIs españoles con 8 dígitos y letra. La letra se comprueba automáticamente.
+          Esta App valida DNIs españoles con 8 dígitos y letra. La letra se comprueba automáticamente.
           El servidor guarda los tokens en memoria durante 6 horas o hasta que reinicies la app.
         </p>
         <p class="small">
